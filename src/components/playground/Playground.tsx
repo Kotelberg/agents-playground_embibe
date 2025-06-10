@@ -494,8 +494,6 @@ export default function Playground({
     rpcMethod,
     rpcPayload,
     handleRpcCall,
-    showRpc,
-    setShowRpc,
   ]);
 
   let mobileTabs: PlaygroundTab[] = [];
