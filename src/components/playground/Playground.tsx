@@ -208,7 +208,6 @@ export default function Playground({
     return visualizerContent;
   }, [
     voiceAssistant.audioTrack,
-    config.settings.theme_color,
     roomState,
     voiceAssistant.state,
   ]);
@@ -481,9 +480,7 @@ export default function Playground({
       </div>
     );
   }, [
-    config.description,
-    config.settings,
-    config.show_qr,
+    config,
     localParticipant,
     name,
     roomState,
@@ -493,6 +490,7 @@ export default function Playground({
     themeColors,
     setUserSettings,
     voiceAssistant.agent,
+    agentAttributes.attributes,
     rpcMethod,
     rpcPayload,
     handleRpcCall,
